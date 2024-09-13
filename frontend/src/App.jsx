@@ -13,7 +13,7 @@ const EmailForm = () => {
     e.preventDefault();
     console.log(emailData);
     const response = await axios.post(
-      "http://localhost:4000/api/send-mail",
+      "https://mail-sender-blzz.onrender.com/api/send-mail",
       emailData
     );
     console.log(response);
